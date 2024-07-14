@@ -12,3 +12,16 @@
 
 
 # django data fields
+
+
+
+
+# Data Relationships
+
+
+# one-to-many  Relationship
+
+#  in thia relationship one object can be associated with many other objects .To represent this relationship
+# we use a foreign key
+
+# 
