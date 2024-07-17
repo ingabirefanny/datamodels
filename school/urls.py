@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from views.py import StudentViewList
-from student.views import StudentListView
+# from student.views import StudentListView
 from django.urls import include
+
+from api.views import StudentListView
 
 
 
