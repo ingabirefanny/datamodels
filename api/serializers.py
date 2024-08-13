@@ -1,8 +1,10 @@
+from pyclbr import Class
 from rest_framework import serializers
 from ClassPeriod.models import ClassPeriod
 from course.models import Course
 from student.models import Student
 from teacher.models import Teacher
+from class.models import Class
 
 class StudentSerializer(serializers.ModelSerializer):
     class meta:
@@ -19,4 +21,10 @@ class TeacherSerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     class meta:
         model=Course
-        fields= "__all__"          
+        fields= "__all__"    
+
+class ClassSerializer(serializers.ModelSerializer):
+    class meta:
+        model=Class
+        fields= "__all__"              
+        
