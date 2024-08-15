@@ -4,7 +4,7 @@ from ClassPeriod.models import ClassPeriod
 from course.models import Course
 from student.models import Student
 from teacher.models import Teacher
-from class.models import Class
+from classes.models import Classes
 
 class StudentSerializer(serializers.ModelSerializer):
     class meta:
@@ -23,8 +23,8 @@ class CourseSerializer(serializers.ModelSerializer):
         model=Course
         fields= "__all__"    
 
-class ClassSerializer(serializers.ModelSerializer):
+class ClassesSerializer(serializers.ModelSerializer):
     class meta:
-        model=Class
-        fields= "__all__"              
-        
+        model=Classes
+        fields= "__all__"        
+
