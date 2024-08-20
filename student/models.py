@@ -1,13 +1,10 @@
 from django.db import models
 
-import course
+from course.models import Course
 
-# Create your models here.
-class Courses (models.Model):
-    courses = models.CharField(max_length=40)
 
 class Student (models.Model):
-    courses = models.ManyToManyField(Courses)
+    courses = models.ManyToManyField(Course)
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     email=models.EmailField()

@@ -12,4 +12,4 @@ class Course (models.Model):
     course_sessions= models.CharField(max_length=20)
     course_students= models.PositiveSmallIntegerField()
     def __str__(self):
-        return f"{self.name} {self.trainer}"
+        return f"{self.course_name} {self.course_trainer}"
